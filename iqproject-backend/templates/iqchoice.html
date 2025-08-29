@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choisir votre test - Test de QI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='iqchoice.css') }}">
+</head>
+<body>
+    <!--header-->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span class="logo-text">Synapz</span>
+            </a>
+
+            <!-- Menu principal (desktop) -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('home_page') }}" class="nav-link active">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('iqchoice_page') }}" class="nav-link">Test de QI</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('quizzchoice_page')}}" class="nav-link">Quizz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('results_page') }}" class="nav-link">Résultats</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('help_page')}}" class="nav-link">Aide & Contact</a>
+                </li>
+            </ul>
+            <!--
+            <div class="nav-actions">
+                <a href="{{ url_for('test_page') }}" class="btn btn-outline">Test rapide</a>
+                <a href="#" class="btn btn-primary">Quizz rapide</a>
+            </div>
+            -->
+
+            <!-- Bouton menu mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu mobile -->
+            <nav class="mobile-nav" id="mobileNav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('home_page') }}" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('iqchoice_page') }}" class="mobile-nav-link">Test de QI</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('quizzchoice_page')}}" class="mobile-nav-link">Quizz</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('results_page') }}" class="nav-link">Résultats</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('help_page')}}" class="nav-link">Aide & Contact</a>
+                    </li>
+                </ul>
+                <!--
+                <div class="mobile-nav-actions">
+                    <a href="{{ url_for('test_page') }}" class="btn btn-outline">Test rapide</a>
+                    <a href="#" class="btn btn-primary">Quizz rapide</a>
+                </div>
+                -->
+                
+            </nav>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header-section">
+            <div class="page-icon">🎯</div>
+            <h1>Choisissez votre test</h1>
+            <!--
+            <p class="subtitle">
+                Sélectionnez le type de test de QI qui vous intéresse le plus. 
+                Chaque test évalue des capacités cognitives spécifiques.
+            </p>
+            -->
+            
+        </div>
+
+        <div class="quiz-grid">
+            <!--
+            <div class="quiz-card logic" onclick="startQuiz('logic')">
+                <div class="quiz-icon">🧩</div>
+                <h3 class="quiz-title">Raisonnement Logique</h3>
+                <p class="quiz-description">
+                    Testez votre capacité à résoudre des problèmes logiques, 
+                    des séquences et des patterns complexes.
+                </p>
+                <div class="quiz-details">
+                    <span class="quiz-detail">⏱️ 15 min</span>
+                    <span class="quiz-detail">❓ 12 questions</span>
+                </div>
+                <span class="quiz-difficulty difficulty-medium">Moyen</span>
+                <button class="quiz-button">Commencer le test</button>
+            </div>
+            <div class="quiz-card spatial" onclick="startQuiz('spatial')">
+                <div class="quiz-icon">🔄</div>
+                <h3 class="quiz-title">Intelligence Spatiale</h3>
+                <p class="quiz-description">
+                    Testez votre capacité à visualiser et manipuler 
+                    mentalement des objets dans l'espace.
+                </p>
+                <div class="quiz-details">
+                    <span class="quiz-detail">⏱️ 18 min</span>
+                    <span class="quiz-detail">❓ 10 questions</span>
+                </div>
+                <span class="quiz-difficulty difficulty-hard">Difficile</span>
+                <button class="quiz-button">Commencer le test</button>
+            </div>
+            <div class="quiz-card math" onclick="startQuiz('math')">
+                <div class="quiz-icon">🔢</div>
+                <h3 class="quiz-title">Raisonnement Numérique</h3>
+                <p class="quiz-description">
+                    Testez vos capacités mathématiques et votre 
+                    raisonnement avec les nombres.
+                </p>
+                <div class="quiz-details">
+                    <span class="quiz-detail">⏱️ 20 min</span>
+                    <span class="quiz-detail">❓ 14 questions</span>
+                </div>
+                <span class="quiz-difficulty difficulty-hard">Difficile</span>
+                <button class="quiz-button">Commencer le test</button>
+            </div>
+        -->
+            <div class="quiz-card verbal" onclick="startIq('easy')">
+                <div class="quiz-icon">💬</div>
+                <h3 class="quiz-title">Test de QI rapide</h3>
+                
+                <div class="quiz-details">
+                    <span class="quiz-detail">⏱️ 10 min</span>
+                    <span class="quiz-detail">❓ 10 questions</span>
+                </div>
+                <span class="quiz-difficulty difficulty-easy">Facile</span>
+                <button class="quiz-button" onclick="startIq('eazy')">Commencer</button>
+            </div>
+
+            
+
+            <div class="quiz-card memory" onclick="startIq('mid')">
+                <div class="quiz-icon">🧠</div>
+                <h3 class="quiz-title">Test moyen</h3>
+                
+                <div class="quiz-details">
+                    <span class="quiz-detail">⏱️ 15 min</span>
+                    <span class="quiz-detail">❓ 20 questions</span>
+                </div>
+                <span class="quiz-difficulty difficulty-medium">Moyen</span>
+                <button class="quiz-button" onclick="startIq('mid')">Commencer</button>
+            </div>
+
+            
+
+            <div class="quiz-card complete" onclick="startIq('complete')">
+                <div class="quiz-icon">🏆</div>
+                <h3 class="quiz-title">Test Complet</h3>
+                <div class="quiz-details">
+                    <span class="quiz-detail">⏱️ 25 min</span>
+                    <span class="quiz-detail">❓ 30 questions</span>
+                </div>
+                <span class="quiz-difficulty difficulty-hard">Complet</span>
+                <button class="quiz-button" onclick="startIq('complete')">Commencer</button>
+            </div>
+        </div>
+
+        <div class="back-section">
+            <a href="index.html" class="back-btn">← Retour à l'accueil</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='iqchoice.js') }}"></script>
+</body>
+</html>

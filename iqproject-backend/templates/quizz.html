@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de QI - Question en cours</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='test.css') }}">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span class="logo-text">Synapz</span>
+            </a>
+
+            <!-- Menu principal (desktop) -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('home_page') }}" class="nav-link active">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('iqchoice_page') }}" class="nav-link">Test de QI</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('quizzchoice_page')}}" class="nav-link">Quizz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('results_page') }}" class="nav-link">Résultats</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('help_page')}}" class="nav-link">Aide & Contact</a>
+                </li>
+            </ul>
+            <!--
+            <div class="nav-actions">
+                <a href="{{ url_for('test_page') }}" class="btn btn-outline">Test rapide</a>
+                <a href="#" class="btn btn-primary">Quizz rapide</a>
+            </div>
+            -->
+
+            <!-- Bouton menu mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu mobile -->
+            <nav class="mobile-nav" id="mobileNav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('home_page') }}" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('iqchoice_page') }}" class="mobile-nav-link">Test de QI</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('quizzchoice_page')}}" class="mobile-nav-link">Quizz</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('results_page') }}" class="nav-link">Résultats</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('help_page')}}" class="nav-link">Aide & Contact</a>
+                    </li>
+                </ul>
+                <!--
+                <div class="mobile-nav-actions">
+                    <a href="{{ url_for('test_page') }}" class="btn btn-outline">Test rapide</a>
+                    <a href="#" class="btn btn-primary">Quizz rapide</a>
+                </div>
+                -->
+                
+            </nav>
+        </nav>
+    </header>
+    <script>
+        
+    </script>
+    <div class="container">
+        <div class="progress-bar">
+            <div class="progress-fill" id="progress"></div>
+        </div>
+
+        <div class="question-header">
+            <div class="question-number" id="question-counter">Question 1/10</div>
+        </div>
+
+        <div class="question-text" id="question-text">
+            Quel est le prochain nombre de la série 2, 4, 8, 16, ?
+        </div>
+
+        <div id="options">
+            <button id="option-quizz" class="option" data-value="A">
+                <span class="option-label">A.</span>
+                24
+            </button>
+            <button id="option-quizz" class="option" data-value="B">
+                <span class="option-label">B.</span>
+                32
+            </button>
+            <button id="option-quizz" class="option" data-value="C">
+                <span class="option-label">C.</span>
+                20
+            </button>
+            <button id="option-quizz" class="option" data-value="D">
+                <span class="option-label">D.</span>
+                28
+            </button>
+        </div>
+
+        <div class="controls">
+            <button id="valid-btn" class="btn btn-secondary" disabled>Valider</button>
+            
+            <div class="timer">
+                <span class="timer-icon">⏱️</span>
+                <span id="timer-display">15:00</span>
+            </div>
+            
+            <button class="btn btn-primary" id="next-btn" disabled>Suivant</button>
+        </div>
+    </div>
+
+    
+</body>
+<script src="{{ url_for('static', filename='quizz.js') }}"></script>
+</html>

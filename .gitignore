@@ -1,0 +1,15 @@
+# Environnements virtuels
+venv/
+.env
+iqproject-backend/venv/
+iqproject-backend/.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Autres
+.DS_Store
+Thumbs.db

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats - Test de QI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='results.css') }}">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🧠</span>
+                <span class="logo-text">Synapz</span>
+            </a>
+
+            <!-- Menu principal (desktop) -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="{{ url_for('home_page') }}" class="nav-link active">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('iqchoice_page') }}" class="nav-link">Test de QI</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('quizzchoice_page')}}" class="nav-link">Quizz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('results_page') }}" class="nav-link">Résultats</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ url_for('help_page')}}" class="nav-link">Aide & Contact</a>
+                </li>
+            </ul>
+            <!--
+            <div class="nav-actions">
+                <a href="{{ url_for('test_page') }}" class="btn btn-outline">Test rapide</a>
+                <a href="#" class="btn btn-primary">Quizz rapide</a>
+            </div>
+            -->
+
+            <!-- Bouton menu mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <!-- Menu mobile -->
+            <nav class="mobile-nav" id="mobileNav">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('home_page') }}" class="nav-link active">Accueil</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('iqchoice_page') }}" class="mobile-nav-link">Test de QI</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('quizzchoice_page')}}" class="mobile-nav-link">Quizz</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('results_page') }}" class="nav-link">Résultats</a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a href="{{ url_for('help_page')}}" class="nav-link">Aide & Contact</a>
+                    </li>
+                </ul>
+                <!--
+                <div class="mobile-nav-actions">
+                    <a href="{{ url_for('test_page') }}" class="btn btn-outline">Test rapide</a>
+                    <a href="#" class="btn btn-primary">Quizz rapide</a>
+                </div>
+                -->
+                
+            </nav>
+        </nav>
+    </header>
+    <script src="{{ url_for('static', filename='results.js') }}"></script>
+    <div class="container">
+        <div class="celebration-icon" id="celebration">🎉</div>
+        
+        <h1>Votre QI estimé</h1>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p>
+        {% else %}
+        <div class="score-section">
+            <div class="score-label">Votre score est :</div>
+            <div id="score">{{ iq }}</div>
+            <div class="score-range">Score moyen : 85-115</div>
+        </div>
+
+        <div id="commentaire">
+            Excellent raisonnement logique ! Vous démontrez des capacités analytiques remarquables.
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-value" id="stat-value"></div>
+                <div class="stat-label">Bonnes réponses</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">12:45</div>
+                <div class="stat-label">Temps utilisé</div>
+            </div>
+            <div class="stat-item">
+                <p>Percentile estimé : {{ percentile }}</p>
+            </div>
+        </div>
+        {% endif %}
+        <div class="actions">
+            <a href="index.html" class="btn btn-primary">Recommencer le test</a>
+            <a href="#" class="btn btn-secondary">Voir les détails</a>
+        </div>
+
+        <div class="share-section">
+            <div class="share-text">Partagez votre résultat :</div>
+            <div class="share-buttons">
+                <a href="#" class="share-btn">📧 Email</a>
+                <a href="#" class="share-btn">🐦 Twitter</a>
+                <a href="#" class="share-btn">📘 Facebook</a>
+                <a href="#" class="share-btn">💼 LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>

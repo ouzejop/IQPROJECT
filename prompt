@@ -1,0 +1,35 @@
+Génère le code HTML complet d'une page [DÉCRIRE LA PAGE] pour un site de test de QI. La page doit respecter exactement le même style et design que mes pages existantes avec ces caractéristiques obligatoires :
+Style et design à respecter :
+
+Font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+Background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+Conteneur principal : fond blanc, border-radius: 20px, box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1)
+Barre colorée en haut du conteneur : height: 5px, background: linear-gradient(90deg, #667eea, #764ba2)
+Palette de couleurs : #667eea (bleu), #764ba2 (violet), #2c3e50 (texte foncé), #5a6c7d (texte gris)
+
+Structure obligatoire :
+
+HTML5 avec lang="fr"
+CSS intégré dans des balises <style>
+Container centré, responsive (max-width entre 600-700px)
+Padding: 50-60px sur desktop, adaptatif sur mobile
+
+Éléments de style à inclure :
+
+Boutons avec border-radius: 50px et effets hover (translateY(-2px))
+Boutons primaires : background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+Boutons secondaires : border: 2px solid #667eea
+Animations CSS (fadeIn, slideUp, etc.) si approprié
+Responsive design avec breakpoints @media (max-width: 768px) et (max-width: 480px)
+
+Header à inclure :
+[Copier ici la section header de ma page précédente si nécessaire]
+Contenu spécifique de la page :
+[DÉCRIRE ICI LE CONTENU SPÉCIFIQUE SOUHAITÉ]
+JavaScript :
+
+Fonctionnalités interactives si nécessaire
+Gestion des événements avec addEventListener
+Code propre et commenté
+
+La page doit avoir une cohérence visuelle parfaite avec les pages d'accueil, de test et de résultats déjà créées.

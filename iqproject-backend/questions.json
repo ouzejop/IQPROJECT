@@ -1,0 +1,293 @@
+[
+    {
+      "question": "Quel est le mot qui est l’intrus parmi les suivants : Chat, Chien, Vache, Tomate ?",
+      "choices": ["Chat", "Chien", "Vache", "Tomate"],
+      "answer": "Tomate",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Complétez la suite : 2, 4, 8, 16, ... ?",
+      "choices": ["18", "24", "32", "20"],
+      "answer": "32",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel cube correspond au développement ci-dessous ?",
+      "choices": ["A", "B", "C", "D"],
+      "answer": "B",
+      "type": "spatiale",
+      "image_url": "https://example.com/images/cube1.png"
+    },
+    {
+      "question": "Quel mot complète logiquement la série suivante : Soleil, Lune, Terre, ... ?",
+      "choices": ["Étoile", "Saturne", "Mars", "Univers"],
+      "answer": "Mars",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Complétez la suite logique : 1, 1, 2, 3, 5, 8, ... ?",
+      "choices": ["11", "12", "13", "10"],
+      "answer": "13",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Si tous les tulipes sont des fleurs et que certaines fleurs fanent vite, peut-on en conclure que certaines tulipes fanent vite ?",
+      "choices": ["Oui", "Non", "Peut-être", "Impossible à dire"],
+      "answer": "Impossible à dire",
+      "type": "logique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel élément complète la série suivante ? A, C, F, J, O, ...",
+      "choices": ["T", "U", "V", "S"],
+      "answer": "U",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Quel schéma complète logiquement la série ?",
+      "choices": ["A", "B", "C", "D"],
+      "answer": "D",
+      "type": "spatiale",
+      "image_url": "https://example.com/images/series2.png"
+    },
+    {
+      "question": "Un train met 2 heures pour parcourir 120 km. Combien de temps mettra-t-il pour parcourir 300 km à la même vitesse ?",
+      "choices": ["4h", "5h", "6h", "3h"],
+      "answer": "5h",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Si les enfants jouent dehors, alors il fait beau. Les enfants ne jouent pas dehors. Que peut-on en déduire ?",
+      "choices": ["Il fait beau", "Il ne fait pas beau", "Les enfants dorment", "On ne peut rien déduire"],
+      "answer": "On ne peut rien déduire",
+      "type": "logique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel est l’intrus parmi les suivants : Carré, Triangle, Rectangle, Cercle ?",
+      "choices": ["Carré", "Triangle", "Rectangle", "Cercle"],
+      "answer": "Cercle",
+      "type": "spatiale",
+      "image_url": ""
+    },
+    {
+      "question": "Quel nombre complète la série : 81, 27, 9, 3, ... ?",
+      "choices": ["1", "2", "0", "6"],
+      "answer": "1",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel mot est le plus opposé à 'fragile' ?",
+      "choices": ["Solide", "Cassant", "Dur", "Brisé"],
+      "answer": "Solide",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Quel cube correspond au développement ci-dessous ?",
+      "choices": ["A", "B", "C", "D"],
+      "answer": "C",
+      "type": "spatiale",
+      "image_url": "https://example.com/images/cube2.png"
+    },
+    {
+      "question": "Quel est le prochain mot dans cette séquence : un, trois, six, dix, ... ?",
+      "choices": ["Treize", "Quinze", "Seize", "Dix-sept"],
+      "answer": "Quinze",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Si tous les pingouins sont des oiseaux et que certains oiseaux volent, peut-on dire que certains pingouins volent ?",
+      "choices": ["Oui", "Non", "Parfois", "Impossible à dire"],
+      "answer": "Non",
+      "type": "logique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel mot complète logiquement la série : lundi, mercredi, vendredi, ... ?",
+      "choices": ["Dimanche", "Samedi", "Lundi", "Dimanche"],
+      "answer": "Dimanche",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Quel schéma complète logiquement la série ?",
+      "choices": ["A", "B", "C", "D"],
+      "answer": "A",
+      "type": "spatiale",
+      "image_url": "https://example.com/images/pattern3.png"
+    },
+    {
+      "question": "Complétez la suite : 5, 10, 20, 40, ... ?",
+      "choices": ["50", "60", "70", "80"],
+      "answer": "80",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Tous les chiens ont des dents. Rex est un chien. Que peut-on en conclure ?",
+      "choices": ["Rex a des dents", "Rex est un chat", "Rex est un animal", "Rien du tout"],
+      "answer": "Rex a des dents",
+      "type": "logique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel mot est l'intrus parmi les suivants : Pomme, Orange, Carotte, Banane ?",
+      "choices": ["Pomme", "Orange", "Carotte", "Banane"],
+      "answer": "Carotte",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Complétez la série suivante : 100, 90, 81, 73, ... ?",
+      "choices": ["66", "65", "64", "70"],
+      "answer": "66",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel mot est le synonyme de 'hâtif' ?",
+      "choices": ["Lent", "Précoce", "Inutile", "Incomplet"],
+      "answer": "Précoce",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Quel cube correspond au développement à plat suivant ?",
+      "choices": ["A", "B", "C", "D"],
+      "answer": "A",
+      "type": "spatiale",
+      "image_url": "https://example.com/images/cube3.png"
+    },
+    {
+      "question": "Complétez la série : 3, 6, 11, 18, ... ?",
+      "choices": ["27", "25", "26", "28"],
+      "answer": "27",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Tous les hommes sont mortels. Socrate est un homme. Que peut-on en déduire ?",
+      "choices": ["Socrate est mort", "Socrate est un philosophe", "Socrate est mortel", "Socrate est un dieu"],
+      "answer": "Socrate est mortel",
+      "type": "logique",
+      "image_url": ""
+    },
+    {
+      "question": "Quel est le mot qui complète la série : Chaleur, Été, Soleil, ... ?",
+      "choices": ["Lumière", "Neige", "Hiver", "Vacances"],
+      "answer": "Vacances",
+      "type": "verbale",
+      "image_url": ""
+    },
+    {
+      "question": "Quel schéma vient ensuite dans cette suite logique ?",
+      "choices": ["A", "B", "C", "D"],
+      "answer": "C",
+      "type": "spatiale",
+      "image_url": "https://example.com/images/pattern4.png"
+    },
+    {
+      "question": "Complétez : 7, 14, 28, 56, ... ?",
+      "choices": ["70", "90", "100", "112"],
+      "answer": "112",
+      "type": "numérique",
+      "image_url": ""
+    },
+    {
+      "question": "Si certains fruits sont sucrés et que toutes les pommes sont des fruits, peut-on conclure que certaines pommes sont sucrées ?",
+      "choices": ["Oui", "Non", "Peut-être", "Impossible à dire"],
+      "answer": "Impossible à dire",
+      "type": "logique",
+      "image_url": ""
+    },
+    {
+    "type": "geographie",
+    "question": "Quel est le plus long fleuve du monde ?",
+    "choices": ["Nil", "Amazone", "Yangtsé", "Mississippi"],
+    "answer": "Amazone",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+    "choices": ["Auckland", "Wellington", "Christchurch", "Hamilton"],
+    "answer": "Wellington",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Dans quel pays se trouve le désert du Kalahari ?",
+    "choices": ["Namibie", "Afrique du Sud", "Botswana", "Zimbabwe"],
+    "answer": "Botswana",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quel est le plus grand lac d’eau douce du monde par superficie ?",
+    "choices": ["Lac Baïkal", "Lac Supérieur", "Lac Victoria", "Lac Tanganyika"],
+    "answer": "Lac Supérieur",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Combien de fuseaux horaires possède la Russie ?",
+    "choices": ["9", "11", "7", "13"],
+    "answer": "11",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quel pays a la plus grande population d'Afrique ?",
+    "choices": ["Nigéria", "Égypte", "Éthiopie", "Afrique du Sud"],
+    "answer": "Nigéria",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quel est le point culminant de l'Amérique du Sud ?",
+    "choices": ["Mont Fitz Roy", "Chimborazo", "Aconcagua", "Huascarán"],
+    "answer": "Aconcagua",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quel détroit sépare l’Europe de l’Asie ?",
+    "choices": ["Détroit de Gibraltar", "Détroit de Béring", "Détroit de Magellan", "Détroit du Bosphore"],
+    "answer": "Détroit du Bosphore",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quel pays européen possède le plus de volcans actifs ?",
+    "choices": ["Islande", "Grèce", "Italie", "France"],
+    "answer": "Italie",
+    "difficulty": "medium",
+    "category": "quizz"
+  },
+  {
+    "type": "geographie",
+    "question": "Quelle est la plus grande île de la Méditerranée ?",
+    "choices": ["Crète", "Sardaigne", "Chypre", "Sicile"],
+    "answer": "Sicile",
+    "difficulty": "medium",
+    "category": "quizz"
+  }
+  ]
+  
